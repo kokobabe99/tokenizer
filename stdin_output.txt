@@ -1,0 +1,186 @@
+{
+  "tokens": [
+    {
+      "type": "KW_PKG",
+      "lexeme": "pkg",
+      "line": 1,
+      "col": 1
+    },
+    {
+      "type": "IDENT",
+      "lexeme": "main",
+      "line": 1,
+      "col": 5
+    },
+    {
+      "type": "KW_IMP",
+      "lexeme": "imp",
+      "line": 2,
+      "col": 1
+    },
+    {
+      "type": "STRING_LIT",
+      "lexeme": "\"std/io\"",
+      "line": 2,
+      "col": 5
+    },
+    {
+      "type": "KW_VAR",
+      "lexeme": "var",
+      "line": 5,
+      "col": 1
+    },
+    {
+      "type": "IDENT",
+      "lexeme": "a",
+      "line": 5,
+      "col": 5
+    },
+    {
+      "type": "COLON",
+      "lexeme": ":",
+      "line": 5,
+      "col": 6
+    },
+    {
+      "type": "TYPE_NAME",
+      "lexeme": "i32",
+      "line": 5,
+      "col": 8
+    },
+    {
+      "type": "ASSIGN",
+      "lexeme": "=",
+      "line": 5,
+      "col": 12
+    },
+    {
+      "type": "KW_VAR",
+      "lexeme": "var",
+      "line": 8,
+      "col": 1
+    },
+    {
+      "type": "IDENT",
+      "lexeme": "b",
+      "line": 8,
+      "col": 5
+    },
+    {
+      "type": "COLON",
+      "lexeme": ":",
+      "line": 8,
+      "col": 6
+    },
+    {
+      "type": "TYPE_NAME",
+      "lexeme": "i32",
+      "line": 8,
+      "col": 8
+    },
+    {
+      "type": "ASSIGN",
+      "lexeme": "=",
+      "line": 8,
+      "col": 12
+    },
+    {
+      "type": "KW_VAR",
+      "lexeme": "var",
+      "line": 11,
+      "col": 1
+    },
+    {
+      "type": "IDENT",
+      "lexeme": "c",
+      "line": 11,
+      "col": 5
+    },
+    {
+      "type": "COLON",
+      "lexeme": ":",
+      "line": 11,
+      "col": 6
+    },
+    {
+      "type": "TYPE_NAME",
+      "lexeme": "i32",
+      "line": 11,
+      "col": 8
+    },
+    {
+      "type": "ASSIGN",
+      "lexeme": "=",
+      "line": 11,
+      "col": 12
+    },
+    {
+      "type": "KW_VAR",
+      "lexeme": "var",
+      "line": 14,
+      "col": 1
+    },
+    {
+      "type": "IDENT",
+      "lexeme": "d",
+      "line": 14,
+      "col": 5
+    },
+    {
+      "type": "COLON",
+      "lexeme": ":",
+      "line": 14,
+      "col": 6
+    },
+    {
+      "type": "TYPE_NAME",
+      "lexeme": "f64",
+      "line": 14,
+      "col": 8
+    },
+    {
+      "type": "ASSIGN",
+      "lexeme": "=",
+      "line": 14,
+      "col": 12
+    },
+    {
+      "type": "KW_VAR",
+      "lexeme": "var",
+      "line": 17,
+      "col": 1
+    },
+    {
+      "type": "IDENT",
+      "lexeme": "e",
+      "line": 17,
+      "col": 5
+    },
+    {
+      "type": "COLON",
+      "lexeme": ":",
+      "line": 17,
+      "col": 6
+    },
+    {
+      "type": "TYPE_NAME",
+      "lexeme": "i32",
+      "line": 17,
+      "col": 8
+    },
+    {
+      "type": "ASSIGN",
+      "lexeme": "=",
+      "line": 17,
+      "col": 12
+    }
+  ],
+  "errors": [
+    "lexical error at 5:14: invalid hex literal",
+    "lexical error at 8:14: invalid binary literal",
+    "lexical error at 11:14: invalid octal literal",
+    "lexical error at 14:14: invalid float exponent",
+    "lexical error at 17:14: illegal underscore placement in number",
+    "lexical error at 20:1: invalid character '@'"
+  ]
+}
