@@ -345,7 +345,7 @@ func (lx *Lexer) scanNumber() {
 func (lx *Lexer) scanString() {
 	l, c := lx.line, lx.col
 	var b strings.Builder
-	b.WriteRune(lx.advance()) // opening "
+	b.WriteRune(lx.advance())
 	for {
 		ch := lx.peek(0)
 		if ch == 0 || ch == '\n' {
@@ -431,7 +431,6 @@ func (lx *Lexer) nextToken() bool {
 	}
 	l, c := lx.line, lx.col
 
-	// identifiers / keywords / type names
 	if lx.isIdentStart(ch) {
 		lx.scanIdentOrKeyword()
 		return true
@@ -456,7 +455,6 @@ func (lx *Lexer) nextToken() bool {
 		return true
 	}
 
-	// operators / punctuation
 	switch ch {
 	case '(':
 		lx.advance()
